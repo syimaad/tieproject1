@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navul {
+    list-style-type: none;
+    position: fixed;
+    top: 0px;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.navli {
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.nava {
+    color: rgb(233, 220, 220);
+    text-align: center;
+    text-decoration: none;
+}
+
+.nava:hover {
+    opacity: 50%;
+}
+
+#logo {
+    width: 200px;
+}
+
+#bionic {
+    position: relative;
+    width: 200px;
+    top: -25px;
+}

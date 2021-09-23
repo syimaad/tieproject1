@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: rgb(1, 2, 3);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Position the image container (needed to position the left and right arrows) */
+        
+        .container {
+            position: relative;
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+        }
+        /* Add a pointer when hovering over the thumbnail images */
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* Container for image text */
+        
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Six columns side by side */
+        
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+        /* Adds a transparency effect for thumnbail images */
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        h1 {
+            color: cornsilk;
+            font-family: Arial-narrow;
+        }
+
+
+        
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="navul">
+            <li  style="float: left; ">
+                <img id="bionic" src=" bionic.png " alt=" ">
+            </li>
+            <li class="navli"><a class="nava" href="contact.php ">Contact Us</a></li>
+            <li class="navli"><a class="nava" href="testimonial-master/index.html">Testimonial</a></li>
+            <li class="navli"><a class="nava" href="gallery.html ">Gallery</a></li>
+            <li class="navli"><a class="nava"  href="about.html ">About</a></li>
+            <li class="navli"><a class="nava" href="index.html ">Home</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align:center">Our Work - Gallery</h1>
+
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="image1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="image2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="image3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="image4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="image5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="image6.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="image1.jpg" style="width:100%" onclick="currentSlide(1)" alt="image1">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image2.jpg" style="width:100%" onclick="currentSlide(2)" alt="image2">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image3.jpg" style="width:100%" onclick="currentSlide(3)" alt="image3">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image4.jpg" style="width:100%" onclick="currentSlide(4)" alt="image4">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image5.jpg" style="width:100%" onclick="currentSlide(5)" alt="image5">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image6.jpg" style="width:100%" onclick="currentSlide(6)" alt="image6">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="fcon">
+        <img style="float:left;" id="fimg" src="logo.jpg"><br>
+        <div class="social">
+            <a style="text-align:center;">Follow Us At:</a>
+            <ul class="ful">
+                <li class="fli"><a class="fa" href="#"> <img style="width: 30px;"src="twitter.jpg"></a></li>
+                <li class="fli"><a class="fa" href="#"> <img style="width: 30px;"src="instagram.png"></a></li>
+                <li class="fli"><a class="fa" href="#"> <img style="width: 30px;" src="linkedin.png"></a></li>
+                <li class="fli"><a class="fa" href="#"> <img style="width: 30px;" src="facebook.png"></a></li>
+            </ul>
+        </div>
+        <div class="details"> <a> Contact Us: +91-900xxxx45,+91-900xxxx46</a><br><br>
+            <a>Email : <a href="#" id="mail">quienttrainings@gmail.com</a></a><br><br>
+            <a>Address: Oppo. IDBI Bank,<br>Whitefield</a>
+            </div>
+       
+        <!-- <p>Facebook: </p> -->
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.fcon{
+    border : 2px solid black;
+    background-color: rgb(115, 113, 117);
+    /* display:flex; */
+    /* justify-content: center; */
+    text-align: center;
+    height:140px;
+}
+#mail{
+    text-decoration: none;
+    cursor: pointer;
+}
+#fimg{
+    width:120px;
+    margin: 10px 10px;
+    
+}
+.social{
+    float:right;
+    text-align: center;
+    display: inline-block;
+}
+.ful{
+    list-style-type: none;
+    padding: 0px 0px;
+}
+.fli{
+    display:inline-block;
+    margin: 0px 10px;
+   
+}
+.details{
+    text-align: center;
+    display: inline-block;
+}
